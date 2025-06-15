@@ -1,7 +1,11 @@
-# This file tells Netlify how to configure your project.
-# Place it in the root of your `ai-career-assistant` folder.
+# Netlify Configuration File
 
+# This block defines the build settings for the site.
+[build]
+  # This setting tells Netlify where your serverless functions are located.
+  functions = "netlify/functions"
+
+# This block configures the runtime settings for your functions.
 [functions]
-  # Increase the timeout for all functions from the default 10 seconds
-  # to 25 seconds. This gives the AI plenty of time to respond.
-  timeout = 25
+  # This increases the timeout from the default 10 seconds to 26 seconds.
+  timeout = 26
