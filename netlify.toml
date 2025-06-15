@@ -5,7 +5,8 @@
   # This setting tells Netlify where your serverless functions are located.
   functions = "netlify/functions"
 
-# This block configures the runtime settings for your functions.
-[functions]
-  # This increases the timeout from the default 10 seconds to 26 seconds.
+# This block uses a wildcard to configure ALL functions.
+# This is a more explicit way to set the timeout and avoids parsing errors.
+[functions."*"]
+  # Increase the timeout to 26 seconds.
   timeout = 26
