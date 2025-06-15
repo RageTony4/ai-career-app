@@ -1,0 +1,7 @@
+# This file tells Netlify how to configure your project.
+# Place it in the root of your `ai-career-assistant` folder.
+
+[functions]
+  # Increase the timeout for all functions from the default 10 seconds
+  # to 25 seconds. This gives the AI plenty of time to respond.
+  timeout = 25
